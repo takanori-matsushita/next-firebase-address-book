@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Footer from "./Footer";
 import Header from "./Header";
+import "../../lib/firebase/config";
 
 export default function Layout(props) {
   return (
@@ -19,6 +20,7 @@ export default function Layout(props) {
       <Header />
       <div className="container">{props.children}</div>
       <Footer />
+      <div id="portal"></div>
     </>
   );
 }
